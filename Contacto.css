@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    color: #EFACA5
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #EFACA5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.barnav a{
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.barnav a:hover {
+    color: #BADD7F;
+}
+
+.Home{
+    height: 100vh;
+    background: url('Home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{ 
+    font-size: 56px;
+    font-weight: 700;
+    color: #BADD7F;
+    line-height: 1.2;
+}
+
+.home-content h3{
+   font-size: 32px;
+   font-weight: 700;
+   color: #EFACA5
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box{
+    display: flex;
+    width: 345px;
+    height: 50px;
+    background: transparent;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #BADD7F;
+    border: 2px solid #BADD7F;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #3E8440;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1; 
+    overflow: hidden;
+}
+
+.btn-box a:nth-child(2){
+    background: #3E8440;
+    color:#BADD7F;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #BADD7F;
+    border-radius: 50%;
+    font-size: 20px;
+    color:#BADD7F;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color:#3E8440
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    background: #BADD7F;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+/*Contacto------------------------------------------------------------------------------------------------------------------------------------------*/
+#contacto {
+    background-color: #EFACA5;  
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 250%;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FED4CF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #ffffff;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #BADD7F; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #3E8440; 
+    transform: translateY(-2px);
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #1e90ff; 
+    outline: none;
+}
+
+/*Footer---------------------------------------------------------------------------------------*/
+.footer {
+    background-color: #EFACA5;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 40px;
+    border-top: 2px solid #BADD7F;
+}
